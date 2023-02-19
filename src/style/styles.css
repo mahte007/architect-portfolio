@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    background-color: #f2f2f2f2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+.container-fluid {
+    padding: 5% 10%;
+}
+
+/*Header*/
+
+.site-title {
+    font-size: 2rem;
+}
+
+/*Navigation bar*/
+
+.nav {
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 4rem 0 1rem;
+    background-color: #fff;
+}
+
+.nav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav a, .dropdown-link{
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+    transition: 0.3s;
+}
+
+.nav li a {
+    opacity: 0.6;
+}
+
+.nav li.active > a {
+    opacity: 1;
+}
+
+.nav li:hover > a {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+/*Dropdown manu in the Navbar*/
+
+.dropdown {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 7rem;
+}
+
+.dropdown-content a {
+    background-color: white;
+    padding: 0.2rem 0 0.1rem 0.5rem;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-link {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.dropdown-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/*Full width cover image*/
+
+.cover-image {
+    width: 100%;
+    height: auto;
+}
+
+/*Featured Posts*/
+
+.featured-post-content{
+    padding-right: 2rem;
+    margin-right: 5rem;
+}
+
+.featured-post-area {
+    padding: 2rem;
+}
+
+.featured-post {
+    padding: 6rem;
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.featured-image {
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.featured-image:hover, .project-image:hover{
+    transform: scale(110%);
+}
+
+/*Project Details Page*/
+
+.project-container {
+    display: flex;
+}
+
+.project-title {
+    padding: 3rem;
+}
+
+.project-image {
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+    padding: 1.5rem 0;
+    transition: 0.3s;
+}
+
+.project-content {
+    padding: 1.5rem 0 0 2rem;
+}
