@@ -1,5 +1,4 @@
 import React from "react";
-import PostImage from "../PostImage";
 import projects from "../../projects";
 import { useParams } from "react-router";
 import ModalImage from "react-modal-image";
@@ -14,11 +13,16 @@ export default function ProjectPage(){
         return require('../../img/'+ imgName)
     }
 
-
     if(!project) {
         return <div>Project not found</div>
     }
     
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+    }
+
+    scrollToTop();
+
     return(
         <div className="project-container container-fluid">
             <div>
@@ -37,5 +41,6 @@ export default function ProjectPage(){
                 <p>{project.description}</p>
             </div>
         </div>
+
     )
 }
