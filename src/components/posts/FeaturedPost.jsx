@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import PostContent from "../PostContent";
-import PostImage from "../PostImage";
+import PostContent from "./PostContent";
+import PostImage from "./PostImage";
 
 export default function FeaturedPost(props){
     return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import projects from "../../projects";
-import { Container, Row, Col, Card, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Portfolio(){

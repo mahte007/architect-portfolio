@@ -3,7 +3,7 @@ import React from "react";
 export default function PostImage(props){
 
     const IMG = (imgName) => {
-        return require('../img/'+ imgName)
+        return require('../../img/'+ imgName)
     }
 
     return(

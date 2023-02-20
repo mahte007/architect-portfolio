@@ -5,6 +5,12 @@ import ModalImage from "react-modal-image";
 
 export default function ProjectPage(){
 
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+    }
+
+    scrollToTop();
+
     const { pageUrl } = useParams();
     const project = projects.find((p) => p.pageUrl === pageUrl);
     const imageClass = "project-image"
@@ -17,11 +23,6 @@ export default function ProjectPage(){
         return <div>Project not found</div>
     }
     
-    const scrollToTop = () => {
-        window.scrollTo(0, 0);
-    }
-
-    scrollToTop();
 
     return(
         <div className="project-container container-fluid">
