@@ -3,9 +3,9 @@ import CustomLink from './CostumLink';
 import DropDown from './DropDown';
 import Logo from './Logo';
 
-export default function Navbar(){
+export default function Navbar(props){
     return(
-        <nav className='nav'>
+        <nav className={props.class}>
         <Logo to="/" text="KŐSZEGI KATICA" />
             <ul className=''>
                 <CustomLink to="/" text="HOME" />

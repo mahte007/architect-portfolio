@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Bio from './pages/about/Bio';
 import Contact from './pages/about/Contact';
@@ -12,9 +12,10 @@ import ProjectPage from './pages/ProjectPage';
 
 
 function App() {
+
   return (
     <>
-      <Header />
+      <div className='nav-fixed'><Header /></div>
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
