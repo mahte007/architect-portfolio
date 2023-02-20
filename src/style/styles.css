@@ -164,3 +164,48 @@ h1, h2, h3, h4, h5, h6 {
 .project-content {
     padding: 1.5rem 0 0 2rem;
 }
+
+
+/*Portfolio page / Project Cards*/
+.portfolio-container {
+    margin-top: 3rem;
+}
+
+.link-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+.card {
+    width: 350px;
+    color: white;
+}
+
+.card-title {
+    opacity: 0;
+    transition: .3s;
+}
+
+.card:hover .card-title{
+    opacity: 1;
+}
+
+  
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+.card:hover::before {
+    opacity: 1;
+  }

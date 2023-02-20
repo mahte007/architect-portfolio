@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import Portfolio from './pages/Portfolio'
 import Header from './header/Header';
-import '../style/styles.css'
+import '../style/styles.css';
 import ProjectPage from './pages/ProjectPage';
 
 
