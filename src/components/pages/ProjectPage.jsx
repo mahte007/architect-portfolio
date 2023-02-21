@@ -7,6 +7,7 @@ export default function ProjectPage(){
 
     const { pageUrl } = useParams();
     const project = projects.find((p) => p.pageUrl === pageUrl);
+    
     const imageClass = "project-image"
     const containerClass = "project-container container-fluid"
     const colClass = "project-content"
