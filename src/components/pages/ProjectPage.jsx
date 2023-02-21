@@ -23,6 +23,10 @@ export default function ProjectPage(){
     }
 
     useEffect(() => {
+        handleScreenWidth();
+    }, [])
+
+    useEffect(() => {
         window.addEventListener('resize', handleScreenWidth)
     })
 
