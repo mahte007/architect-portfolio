@@ -1,12 +1,18 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
 import projects from "../../projects";
 import { useParams } from "react-router";
-import ModalImage from "react-modal-image";
+import Project from "../project/Project";
 
 export default function ProjectPage(){
 
-    const [isWidth, setIsWidth] = useState(false);
+    const { pageUrl } = useParams();
+    const project = projects.find((p) => p.pageUrl === pageUrl);
+    const imageClass = "project-image"
+    const containerClass = "project-container container-fluid"
+    const colClass = "project-content"
+
+    //useState and EvenHandler for screen size and render positioning
+    const [isWidth, setIsWidth] = useState(true);
 
     const handleScreenWidth = () => {
         if(window.innerWidth > 991){
@@ -21,70 +27,22 @@ export default function ProjectPage(){
     })
 
 
-
+    //Function to scroll to the top if page is rendered
     const scrollToTop = () => {
         window.scrollTo(0, 0);
     }
-
     scrollToTop();
-
-    const { pageUrl } = useParams();
-    const project = projects.find((p) => p.pageUrl === pageUrl);
-    const imageClass = "project-image"
-
-    const IMG = (imgName) => {
-        return require('../../img/'+ imgName)
-    }
 
     if(!project) {
         return <div>Project not found</div>
     }
 
-    if(isWidth){
-        return(
-            <Container className="project-container container-fluid">
-            <Row>
-                <Col lg={6}>
-                    {project.imagePortfolio.map((image, index) => (
-                        <ModalImage 
-                        small={IMG(project.imagePortfolio[index])}
-                        large={IMG(project.imagePortfolio[index])}
-                        alt={project.name}
-                        className={imageClass}
-                        hideDownload= "true"
-                    />
-                    ))}
-                </Col>
-                <Col lg={6} className="project-content">
-                <h1>{project.name}</h1>
-                    <p>{project.description}</p>
-                </Col>
-            </Row>
-            </Container>
-
-        )
-    }else{
-        return(
-            <Container className="project-container container-fluid">
-            <Row>
-                <Col lg={6} className="project-content">
-                   <h1>{project.name}</h1>
-                    <p>{project.description}</p>
-                </Col>
-                <Col lg={6}>
-                    {project.imagePortfolio.map((image, index) => (
-                        <ModalImage 
-                        small={IMG(project.imagePortfolio[index])}
-                        large={IMG(project.imagePortfolio[index])}
-                        alt={project.name}
-                        className={imageClass}
-                        hideDownload= "true"
-                    />
-                    ))}
-                </Col>
-            </Row>
-            </Container>
-    
-        )
-    }
-}
+    return (
+    <Project 
+        containerClass={containerClass} 
+        colClass={colClass} 
+        project={project} 
+        imageClass={imageClass}
+        isWidth={isWidth} 
+    />)
+} 
