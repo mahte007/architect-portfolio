@@ -7,7 +7,7 @@ export default function FeaturedPost(props){
     return (
         <div className="featured-post">
             <PostContent />
-            <Link to={'/projects/' + props.src}><PostImage src="pexels-gdtography-911758.jpg" class="featured-image"/></Link>
+            <Link to={'/portfolio/' + props.src}><PostImage src="pexels-gdtography-911758.jpg" class="featured-image"/></Link>
         </div>
     )
 }

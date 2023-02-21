@@ -1,4 +1,5 @@
 import React from "react";
+import ModalImage from "react-modal-image";
 import gallery from "../../gallery";
 
 export default function Gallery(){
@@ -11,8 +12,14 @@ export default function Gallery(){
         <div className="gallery">
             {gallery.map((item, index) => {
                 return(
-                    <div className="pics" key={item.key}>
-                        <img src={IMG(item.imgURL)}  alt={item.alt} style={{width: '100%'}} />
+                    <div key={item.key}>
+                        <ModalImage 
+                            small={IMG(item.imgURL)}
+                            large={IMG(item.imgURL)}
+                            alt={item.name}
+                            hideDownload= "true"
+                            className="pics"
+                        />
                     </div>
                 )
             })}

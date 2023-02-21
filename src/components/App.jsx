@@ -13,6 +13,7 @@ import ProjectPage from './pages/ProjectPage';
 
 function App() {
 
+
   return (
     <>
       <div className='nav-fixed'><Header /></div>
@@ -20,11 +21,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/projects" element={<Portfolio />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/bio" element={<Bio />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/projects/:pageUrl" element={<ProjectPage />} />
+          <Route path="/portfolio/:pageUrl" element={<ProjectPage />} />
         
         </Routes>
       </div>
