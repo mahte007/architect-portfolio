@@ -14,8 +14,8 @@ export default function Portfolio(){
         <Container className="portfolio-container">
         <Row className="m-3">
             {projects.map((project) => (
-            <Col sm={12} lg={6} xl={4} className="mb-5">
-                <Card border="light" className="h-100">
+            <Col sm={12} lg={4} xl={3} className="mb-5">
+                <Card key={project.key} border="light" className="h-100">
                 <Link to={'/projects/' + project.pageUrl}>
                     <Card.Img
                     variant="top"

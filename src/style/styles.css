@@ -168,7 +168,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Portfolio page / Project Cards*/
 .portfolio-container {
-    margin-top: 3rem;
+    margin-top: 3rem auto;
+    align-items: center;
 }
 
 .link-overlay {
@@ -180,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 .card {
-    width: 350px;
+    width: 100%;
     color: white;
 }
 
