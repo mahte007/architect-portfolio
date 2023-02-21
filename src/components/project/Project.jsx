@@ -4,8 +4,6 @@ import ProjectImage from "./ProjectImage";
 import ProjectDetails from "./ProjectDetails";
 
 
-
-
 export default function Project(props) {
 
     if(props.isWidth){

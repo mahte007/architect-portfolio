@@ -3,7 +3,7 @@ import React from "react";
 export default function CoverImage(props){
 
     const IMG = (imgName) => {
-        return require('../img/'+ imgName)
+        return require('../img/project/'+ imgName)
     }
 
     return(

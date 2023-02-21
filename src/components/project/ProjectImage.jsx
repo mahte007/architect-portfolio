@@ -6,7 +6,7 @@ import ModalImage from "react-modal-image";
 export default function Project(props) {
 
     const IMG = (imgName) => {
-        return require('../../img/'+ imgName)
+        return require('../../img/project/'+ imgName)
     }
 
     return(
