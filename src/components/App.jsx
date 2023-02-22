@@ -9,6 +9,7 @@ import Portfolio from './pages/Portfolio'
 import Header from './header/Header';
 import '../style/styles.css';
 import ProjectPage from './pages/ProjectPage';
+import Footer from './footer/Footer';
 
 
 function App() {
@@ -27,9 +28,9 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio/:pageUrl" element={<ProjectPage />} />
-        
         </Routes>
       </div>
+      <div><Footer /></div>
     </>
   );
 }
