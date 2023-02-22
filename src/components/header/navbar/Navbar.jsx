@@ -6,7 +6,7 @@ import Logo from './Logo';
 export default function Navbar(props){
     return(
         <nav className={props.class}>
-        <Logo to="/" text="KŐSZEGI KATICA" />
+            <Logo to="/" text="KŐSZEGI KATICA" />
             <ul className=''>
                 <CustomLink to="/" text="HOME" />
                 <CustomLink to="/portfolio" text="PORTFOLIO" />
@@ -14,11 +14,11 @@ export default function Navbar(props){
                 <CustomLink to="#" text="|" />
                 <span className='dropdown'>
                         <span className='dropdown-link'>ABOUT</span>
-                    <div className='dropdown-content'>
-                        <DropDown />
-                    </div>
+                        <div className='dropdown-content'>
+                            <DropDown />
+                        </div>
                 </span>                
-            </ul>
+        </ul>
         </nav>
     );
 }

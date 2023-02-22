@@ -26,7 +26,7 @@ const [isSticky, setIsSticky] = useState(false);
     return(
         <div>
             <Navbar class={isSticky ? 'nav sticky' : 'nav'} />
-            </div>
+        </div>
     );
 }
 
