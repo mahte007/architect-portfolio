@@ -325,3 +325,19 @@ h1, h2, h3, h4, h5, h6 {
     height: 3rem;
     align-items: center;
 }
+
+/* Contact Page */
+
+.contact-container {
+    display: flex;
+    margin: 5rem auto;
+    width: 60%;
+}
+
+.contact-form {
+    display: block;
+}
+
+.contact-image {
+    width: 30%;
+}
