@@ -6,7 +6,7 @@ export default function Footer(){
     const currentYear = date.getFullYear();
 
     return (
-        <div className="footer">
+        <>
             <div>
                 <Icon class="fa-brands fa-instagram footer-icon" />
                 <Icon class="fa-brands fa-facebook footer-icon" />
@@ -16,6 +16,6 @@ export default function Footer(){
             <div>
                 @{currentYear} Kőszegi Katica
             </div>
-        </div>
+        </>
     )
 }

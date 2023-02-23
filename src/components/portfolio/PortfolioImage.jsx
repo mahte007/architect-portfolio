@@ -13,7 +13,7 @@ export default function PortfolioCard(props){
                         variant="top"
                         src={IMG(props.project.imageUrl)}
                         alt={props.project.name}
-                        className="img-fluid w-100"
+                        className="img-fluid w-100 image-border-radius"
                         />
                         <Card.ImgOverlay className="d-flex align-items-end">
                         <Card.Title className="text-light">

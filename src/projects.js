@@ -39,40 +39,6 @@ const projects = [
         imageUrl: "pexels-gdtography-911758.jpg",
         imagePortfolio: ["pexels-gdtography-911758.jpg", "pexels-gdtography-911758.jpg", "pexels-gdtography-911758.jpg", "pexels-gdtography-911758.jpg"]
     },
-    {
-        id: 6,
-        pageUrl: "Project-5",
-        name: "Project 5",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        imageUrl: "pexels-gdtography-911758.jpg",
-        imagePortfolio: ["pexels-gdtography-911758.jpg", "pexels-gdtography-911758.jpg", "pexels-gdtography-911758.jpg", "pexels-gdtography-911758.jpg"]
-    },
-    {
-        id: 7,
-        pageUrl: "Project-5",
-        name: "Project 5",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        imageUrl: "pexels-gdtography-911758.jpg",
-        imagePortfolio: ["pexels-gdtography-911758.jpg", "pexels-gdtography-911758.jpg", "pexels-gdtography-911758.jpg", "pexels-gdtography-911758.jpg"]
-    },
-    {
-        id: 8,
-        pageUrl: "Project-5",
-        name: "Project 5",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        imageUrl: "pexels-gdtography-911758.jpg",
-        imagePortfolio: ["pexels-gdtography-911758.jpg", "pexels-gdtography-911758.jpg", "pexels-gdtography-911758.jpg", "pexels-gdtography-911758.jpg"]
-    },
-    {
-        id: 9,
-        pageUrl: "Project-5",
-        name: "Project 5",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        imageUrl: "pexels-gdtography-911758.jpg",
-        imagePortfolio: ["pexels-gdtography-911758.jpg", "pexels-gdtography-911758.jpg", "pexels-gdtography-911758.jpg", "pexels-gdtography-911758.jpg"]
-    },
-    
-    
 ]
 
 export default projects;

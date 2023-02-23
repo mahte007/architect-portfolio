@@ -16,9 +16,9 @@ function App() {
 
 
   return (
-    <>
+    <div className='main-container'>
       <div className='nav-fixed'><Header /></div>
-      <div>
+      <div className='main-content'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
@@ -30,8 +30,8 @@ function App() {
           <Route path="/portfolio/:pageUrl" element={<ProjectPage />} />
         </Routes>
       </div>
-      <div><Footer /></div>
-    </>
+      <div className="footer"><Footer /></div>
+    </div>
   );
 }
 
