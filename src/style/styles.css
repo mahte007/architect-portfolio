@@ -330,7 +330,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-container {
     display: flex;
-    margin: 5rem auto;
+    margin: 5rem 25%;
     width: 60%;
 }
 
@@ -338,6 +338,30 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 
+.contact-form input {
+    margin-bottom: 0.5rem;
+}
+
+.contact-form-container {
+    margin-left: 3rem;
+    width: 50%;
+}
+
+.contact-form-container h3 {
+    font-weight: 600;
+}
+
 .contact-image {
     width: 30%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.page-line-whitespace {
+    margin: 0 auto;
+}
+
+.contact-elements {
+    margin: 3rem 25%;
+    line-height: 1;
 }

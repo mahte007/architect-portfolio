@@ -1,9 +1,7 @@
 import React from "react";
 
-export default function ContactElement(){
+export default function ContactElement(props){
     return(
-        <div>
-            
-        </div>
+        <p><b>{props.name}:</b> {props.content}</p>
     )
 }
