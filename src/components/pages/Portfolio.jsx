@@ -10,7 +10,7 @@ export default function Portfolio(){
             <Row className="m-3">
                 {projects.map((project) => (
                 <Col sm={12} lg={4} xl={3} className="mb-5">
-                    <PortfolioCard project={project} />
+                    <PortfolioCard key={project.key} project={project} />
                 </Col>
                 ))}
             </Row>

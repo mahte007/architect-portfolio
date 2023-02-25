@@ -5,7 +5,7 @@ import PortfolioImage from "./PortfolioImage";
 
 export default function PortfolioCard(props){
     return (
-        <Card key={props.project.key} border="light" className="h-100">
+        <Card key={props.key} border="light" className="h-100">
                 <Link to={'/portfolio/' + props.project.pageUrl}>
                     <PortfolioImage project={props.project} />
                 </Link>
