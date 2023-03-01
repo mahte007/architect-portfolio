@@ -334,7 +334,7 @@ h1, h2, h3, h4, h5, h6 {
 .contact-container {
     display: flex;
     margin: 5rem 25%;
-    width: 70%;
+    width: 80%;
 }
 
 .contact-form input {
@@ -342,8 +342,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-form-container {
-    margin-left: 3rem;
-    width: 35%;
+    margin: 0 25% 0 3rem;
+    text-align: justify;
 }
 
 .contact-form-container h3 {
@@ -351,10 +351,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-image {
-    width: 40%;
+    max-width: 30%;
     height: auto;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+}
+
+@media (max-width: 991px) {
+    .contact-container {
+        display: block;
+        margin: 5rem auto;
+      }
+    
+    .contact-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contact-form-container {
+        margin: 0 20%;
+        text-align: justify;
+    }
+
 }
 
 .page-line-whitespace {
