@@ -58,6 +58,13 @@ h1, h2, h3, h4, h5, h6 {
     flex-shrink: 0;
 }
 
+@media (max-width: 991px) {
+    .footer {
+        padding: 3rem 2rem;
+        font-size: 1.5rem;
+    }
+}
+
 .footer-icon {
     padding-right: 0.5rem;
 }
@@ -351,6 +358,19 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
+@media (max-width: 991px) {
+    .bio-details-container {
+        width: 60%;
+    }
+
+    .profile-image {
+        display: flex;
+        border-radius: 50%;
+        width: 40%;
+        margin: 3rem auto 0;
+    }
+}
+
 /* Contact Page */
 
 .contact-container {
@@ -391,6 +411,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .contact-form-container {
+        padding-top: 2rem;
         margin: 0 20%;
         text-align: justify;
     }
