@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 export default function CostumForm(){
 
-    const [status, setStatus] = useState("Submit");
+  const [status, setStatus] = useState("Submit");
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
@@ -35,7 +35,7 @@ export default function CostumForm(){
                 <input type="text" placeholder="Name" id="name"></input> <br />
                 <input type="email" placeholder="Email" id="email"></input> <br />
                 <textarea placeholder="Message" rows="3" cols="30" id="message"></textarea> <br />
-                <button>Send</button>
+                <button>{status}</button>
             </form>
         </div>
     )

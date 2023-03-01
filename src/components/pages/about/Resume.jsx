@@ -1,6 +1,5 @@
 import React from "react";
 import ProfileCover from "../../profile/ProfileImage";
-import ResumeDetails from "../../resume/ResumeDetails";
 import ResumeSection from "../../resume/ResumeSection";
 
 export default function Resume(){
