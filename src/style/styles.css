@@ -82,9 +82,6 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
 }
 
-.nav.sticky {
-}
-
 .nav ul{
     padding: 0;
     margin: 0;
@@ -114,6 +111,16 @@ h1, h2, h3, h4, h5, h6 {
 .nav li:hover > a {
     text-decoration: underline;
     opacity: 1;
+}
+
+@media (max-width: 991px) {
+    .nav ul.active {
+        display: block;
+    }
+    
+    .nav ul {
+        display: none;
+    }
 }
 
 /*Dropdown manu in the Navbar*/
@@ -152,6 +159,55 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
     text-decoration: underline;
 }
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 991px){
+    .hamburger {
+        display: flex;
+        width: 24px;
+        height: 24px;
+        position: relative;
+        cursor: pointer;
+        margin: auto 0;
+        flex-direction: column;
+        justify-content: space-around;
+        transition: 0.5s;
+    }
+    
+    .hamburger span {
+        background-color: #000;
+        width: 100%;
+        height: 3px;
+    }
+
+    .hamburger.open {
+        transform: rotate(-180deg);
+    }
+
+    .hamburger.open span:nth-child(1) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .hamburger.open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.open span:nth-child(3) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+}
+
 
 /*Full width cover image*/
 
