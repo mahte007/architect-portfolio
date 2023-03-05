@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 
 function Header(){
 
-const [isSticky, setIsSticky] = useState(false);
+/* const [isSticky, setIsSticky] = useState(false);
 
   const handleScroll = () => {
     if(window.pageYOffset > 0) {
@@ -20,12 +20,12 @@ const [isSticky, setIsSticky] = useState(false);
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [])
+  }, []) */
 
 
     return(
         <div>
-            <Navbar class={isSticky ? 'nav sticky' : 'nav'} />
+            <Navbar class='nav' />
         </div>
     );
 }

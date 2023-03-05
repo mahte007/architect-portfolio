@@ -25,7 +25,7 @@ export default function Navbar(props){
     }, [])
 
     return(
-        <nav className={props.class}>
+        <nav className={isActive ? 'nav nav-open' : props.class}>
             <Logo to="/" text="KŐSZEGI KATICA" />
             
             <ul className={isActive ? 'active' : ''}>

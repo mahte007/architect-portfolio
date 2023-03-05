@@ -8,7 +8,7 @@ body {
 
 @media (max-width: 991px) {
     html {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -61,7 +61,6 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991px) {
     .footer {
         padding: 3rem 2rem;
-        font-size: 1.5rem;
     }
 }
 
@@ -116,7 +115,19 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991px) {
     .nav ul.active {
         display: block;
+        margin: auto;
     }
+
+    .nav-open {
+        position: fixed;
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(255, 255, 255, 0.8);
+        transition: height 1s ease-out;
+    }
+
+    
     
     .nav ul {
         display: none;
