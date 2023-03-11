@@ -13,7 +13,6 @@ body {
 }
 
 
-
 body, html {
     height: 100%;
     margin: 0;
@@ -127,8 +126,6 @@ h1, h2, h3, h4, h5, h6 {
         transition: height 1s ease-out;
     }
 
-    
-    
     .nav ul {
         display: none;
     }
@@ -267,6 +264,7 @@ h1, h2, h3, h4, h5, h6 {
         display: flex;
         margin: 0 auto;
         width: 100%;
+        font-size: 1.5rem;
     }
 
     .featured-post-content {
@@ -428,6 +426,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991px) {
     .bio-details-container {
         width: 60%;
+        font-size: 1.5rem;
     }
 
     .profile-image {
