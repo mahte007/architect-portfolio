@@ -295,6 +295,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+@media (max-width: 991px) {
+    .project-container {
+        font-size: 1.5rem;
+    }
+}
+
 /*Portfolio page / Project Cards*/
 .portfolio-container {
     margin-top: 3rem auto;
